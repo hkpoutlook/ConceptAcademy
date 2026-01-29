@@ -36,6 +36,31 @@ nav a{transition:color .15s}
 .contact-form{max-width:720px;background:var(--card);padding:1rem;border-radius:8px;box-shadow:0 8px 24px rgba(15,23,42,0.06);margin-top:1rem}
 .contact-form label{display:block;font-weight:600;margin-top:.75rem}
 .contact-form input,.contact-form textarea{width:100%;padding:.6rem;border:1px solid #e6e9ef;border-radius:6px;margin-top:.35rem}
-.contact-form button{margin-top:1rem;background:var(--accent);color:#fff;border:none;padding:.6rem 1rem;border-radius:6px;cursor:pointer}
+.contact-form button{margin-top:1rem;background:var(--accent);color:#fff;border:none;padding:.6rem 1rem;border-radius:6px;cursor:pointer;transition:background .15s}
+.contact-form button:hover{background:#1e5ab3}
 .contact-form .form-note{color:var(--muted);font-size:.95rem;margin-top:.5rem}
+
+/* Portal & Grade sections */
+.grade-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin:2rem 0}
+.grade-card{background:var(--card);padding:1.5rem;border-radius:var(--radius);box-shadow:0 6px 18px rgba(15,23,42,0.06);transition:transform .2s}
+.grade-card:hover{transform:translateY(-4px)}
+.grade-card a{color:var(--accent);text-decoration:none;font-weight:500}
+
+.portal-section{margin:2rem 0;padding:1.5rem 0;border-bottom:1px solid #e6e9ef}
+.portal-section:last-child{border-bottom:none}
+
+.feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem;margin:1rem 0}
+.feature-box{background:linear-gradient(135deg, rgba(39,110,241,0.05), rgba(39,110,241,0.02));padding:1.25rem;border-radius:8px;border-left:4px solid var(--accent)}
+
+.theme-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin:1rem 0}
+.theme-card{background:var(--card);padding:1.25rem;border-radius:8px;box-shadow:0 4px 12px rgba(15,23,42,0.04)}
+
+.checklist{list-style:none;padding:0}
+.checklist li{padding:.5rem 0;padding-left:2rem;position:relative}
+.checklist li:before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+
+.faq-item{background:var(--card);padding:1rem;margin:.75rem 0;border-radius:6px;border-left:3px solid var(--accent)}
+
+.cta-link{color:var(--accent);text-decoration:none;font-weight:600;transition:opacity .15s}
+.cta-link:hover{opacity:.8}
 
